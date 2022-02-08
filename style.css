@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+    margin: 2px;
+    padding: 2px;
+}
+
+#box {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap:1em;
+    background-color:lavender
+
+
+}
+
+.insidebox {
+    display: flex;
+    flex-direction: row;
+    background-color:burlywood;
+    padding:1em;
+}
+
+.insidebox > div {
+    background-color: #eee;
+    padding: 2em;
+
+}
+
+
+.insidebox > div:nth-child(odd){
+    background-color:aliceblue
+}
