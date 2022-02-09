@@ -1,0 +1,63 @@
+*{
+    box-sizing:border-box;
+    margin: 2px;
+    padding: 2px;
+}
+
+#box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1em;
+    background-color:lavender;
+    margin: 1em auto;
+    padding: 1em;
+    width:fit-content;
+    height:max-content;
+    justify-content: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    opacity:0.8;
+    overflow-x: hidden;
+
+    /*justify-content:center;
+     text-align:center;
+     height:100px;
+     width:200px;  */
+    
+
+}
+.insidebox {
+    display: flex;
+    flex-direction: row;
+    background-color:burlywood;
+    padding:2em;
+    margin: 1px;;
+}
+
+/* .box1 {
+   display: flex;
+   width: 50px;
+   height: 50px; 
+
+}  Ask this one again on each box */
+
+.fit-picture{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0em;
+    margin:0%;
+
+}
+
+.insidebox > div {
+    background-color: #eee;
+    padding: 2em;
+    margin: 2px;
+
+
+}
+
+.insidebox > div:nth-child(odd){
+    background-color:aliceblue
+}
